@@ -500,6 +500,7 @@ function SuppliersTab({suppliers,products}){
             {[["📞",s.phone||"-"],["💳",`เครดิต ${s.term} วัน`],["🚀",`Lead ${s.lead} วัน`],["📦",`${ps.length} รายการ`]].map(([ic,v])=><div key={v} style={{fontSize:12,color:"#64748b",marginTop:4}}>{ic} {v}</div>)}
             {ps.length>0&&<div style={{marginTop:10,display:"flex",gap:5,flexWrap:"wrap"}}>{ps.map(p=><span key={p.id} style={{background:"#f1f5f9",color:"#475569",fontSize:11,padding:"2px 8px",borderRadius:6}}>{p.name}</span>)}</div>}
           </div>);})}
+      </div>
     </Card>
   );
 }
